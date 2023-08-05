@@ -23,7 +23,7 @@ const TagsList = () => {
 
     return (
         <div>
-            <h2>Tags List:</h2>
+            <h3>Tags List:</h3>
             {tags.map((tag, index) => (
                 <span key={index}>{tag} </span>
             ))}

@@ -40,7 +40,7 @@ const NoteList = () => {
             <ul>
                 {filteredNotes.map((note) => (
                     <li key={note.id}>
-                        {note.text}
+                        <span className='note'>{note.text}</span>
                         <button onClick={() => handleDelete(note.id)}>Delete</button>
                         <button onClick={() => handleEdit(note.id, editText(note.text))}>Edit</button>
                     </li>
